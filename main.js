@@ -31,8 +31,8 @@ let prevImg = document.querySelector(".btn-before");
 let curImg = 0;
 let maxSlide = image_carousel.length - 1;
 
-image_carousel.forEach((slide, indx) => {
-    slide.style.transform = `translateX(${indx * 100}%)`;
+image_carousel.forEach((slide, index) => {
+    slide.style.transform = `translateX(${index * 100}%)`;
 });
 
 
@@ -44,8 +44,8 @@ nextImg.addEventListener("click", function () {
         curImg++;
     }
 
-    image_carousel.forEach((slide, indx) => {
-        slide.style.transform = `translateX(${100 * (indx - curImg)}%)`;
+    image_carousel.forEach((slide, index) => {
+        slide.style.transform = `translateX(${100 * (index - curImg)}%)`;
     });
 });
 
@@ -58,7 +58,7 @@ prevImg.addEventListener("click", function () {
         curImg--;
     }
 
-    image_carousel.forEach((slide, indx) => {
-        slide.style.transform = `translateX(${100 * (indx - curImg)}%)`;
+    image_carousel.forEach((slide, index) => {
+        slide.style.transform = `translateX(${100 * (index - curImg)}%)`;
     });
 });
