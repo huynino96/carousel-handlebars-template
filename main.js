@@ -6,19 +6,15 @@ let template = Handlebars.compile(source);
 let data = {
     images: [
         {
-            heading: "1",
             image: "https://source.unsplash.com/random?landscape,mountain"
         },
         {
-            heading: "2",
             image: "https://source.unsplash.com/random?landscape,cars"
         },
         {
-            heading: "3",
             image: "https://source.unsplash.com/random?landscape,night"
         },
         {
-            heading: "4",
             image: "https://source.unsplash.com/random?landscape,city"
         },
     ]
