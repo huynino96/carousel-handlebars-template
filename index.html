@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Carousel</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+  </head>
+
+  <body>
+    <!-- carousel-img container -->
+      <!-- slide 1 -->
+      <script id="carousel-template" type="text/x-handlebars-template">
+        
+          {{#each images}}
+          <div class="image-slick">
+            <img src="{{image}}" alt="" />
+        </div>
+          {{/each}}
+      </script>
+      <div class="carousel-img"></div>
+      <!-- Control buttons -->
+      <button class="btn btn-after">></button>
+      <button class="btn btn-before"><</button>
+
+    <script src="main.js"></script>
+  </body>
+</html>
